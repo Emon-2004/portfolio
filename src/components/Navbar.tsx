@@ -17,19 +17,33 @@ export default function Navbar() {
     { name: "Contact", href: "#contact", id: "contact" },
   ];
 
-  // Active section tracking via IntersectionObserver
   useEffect(() => {
     const handleScroll = () => {
-      const sections = navLinks.map(link => document.getElementById(link.id)).filter(Boolean);
-      const scrollPosition = window.scrollY + 160;
+      const scrollY = window.scrollY;
+      const windowHeight = window.innerHeight;
+      const documentHeight = document.documentElement.scrollHeight;
 
-      for (let i = sections.length - 1; i >= 0; i--) {
-        const section = sections[i];
-        if (section && section.offsetTop <= scrollPosition) {
-          setActiveSection(section.id);
-          break;
+      // If scrolled to the bottom of the page, highlight the last section (Contact)
+      if (scrollY + windowHeight >= documentHeight - 50) {
+        setActiveSection("contact");
+        return;
+      }
+
+      // Check each section from top to bottom
+      const offsetMargin = 140; // Navbar height + offset
+      let currentSection = navLinks[0].id;
+
+      for (const link of navLinks) {
+        const el = document.getElementById(link.id);
+        if (el) {
+          const top = el.offsetTop - offsetMargin;
+          if (scrollY >= top) {
+            currentSection = link.id;
+          }
         }
       }
+
+      setActiveSection(currentSection);
     };
 
     window.addEventListener("scroll", handleScroll, { passive: true });
@@ -46,11 +60,11 @@ export default function Navbar() {
     const target = document.querySelector(href);
     if (target) {
       const navHeight = 80;
-      const elementPosition = target.getBoundingClientRect().top;
-      const offsetPosition = elementPosition + window.pageYOffset - navHeight;
+      const elementPosition = (target as HTMLElement).offsetTop;
+      const offsetPosition = elementPosition - navHeight;
 
       window.scrollTo({
-        top: offsetPosition,
+        top: offsetPosition >= 0 ? offsetPosition : 0,
         behavior: "smooth"
       });
     }
@@ -59,7 +73,7 @@ export default function Navbar() {
   return (
     <header className="sticky top-0 z-50 backdrop-blur-md bg-[#0B0D17]/85 border-b border-white/5 transition-all">
       <div className="max-w-7xl mx-auto px-6 h-20 flex items-center justify-between">
-        {/* Logo / Brand */}
+        {/* Brand */}
         <a
           href="#"
           onClick={(e) => {
@@ -76,7 +90,7 @@ export default function Navbar() {
           </span>
         </a>
 
-        {/* Desktop Navigation with Active Indicator */}
+        {/* Desktop Navigation Links with Precise Indicator */}
         <nav className="hidden md:flex items-center gap-8 text-sm font-medium">
           {navLinks.map((link) => {
             const isActive = activeSection === link.id;
@@ -90,7 +104,7 @@ export default function Navbar() {
                 }`}
               >
                 {link.name}
-                {/* Active Indicator Underline ("dag er moto") */}
+                {/* Active Underline Indicator */}
                 <span
                   className={`absolute bottom-0 left-0 h-0.5 rounded-full transition-all duration-300 ${
                     isActive

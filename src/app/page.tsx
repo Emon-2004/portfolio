@@ -1,9 +1,10 @@
 import Navbar from "@/components/Navbar";
 import Hero from "@/components/Hero";
 import BentoHighlights from "@/components/BentoHighlights";
+import About from "@/components/About";
 import Projects from "@/components/Projects";
 import Skills from "@/components/Skills";
-import AboutEducation from "@/components/AboutEducation";
+import Education from "@/components/Education";
 import Contact from "@/components/Contact";
 import Footer from "@/components/Footer";
 
@@ -13,9 +14,10 @@ export default function Home() {
       <Navbar />
       <Hero />
       <BentoHighlights />
+      <About />
       <Projects />
       <Skills />
-      <AboutEducation />
+      <Education />
       <Contact />
       <Footer />
     </main>
