@@ -79,14 +79,6 @@ export default function Hero() {
                 className="object-cover object-top filter brightness-95 contrast-105 group-hover:scale-105 transition-transform duration-500"
               />
               <div className="absolute inset-0 bg-gradient-to-t from-[#131627] via-transparent to-transparent opacity-60" />
-              
-              <div className="absolute bottom-3 left-3 right-3 bg-[#131627]/90 backdrop-blur-md rounded-xl p-3 border border-white/10 flex items-center justify-between">
-                <div>
-                  <p className="text-xs font-semibold text-white">East West University</p>
-                  <p className="text-[11px] text-gray-400">B.Sc. in CSE (Undergraduate)</p>
-                </div>
-                <span className="w-2 h-2 rounded-full bg-emerald-400" />
-              </div>
             </div>
 
             {/* Quick Status Pill */}
