@@ -6,11 +6,11 @@ import { portfolioData } from "@/data/portfolio";
 export default function BentoHighlights() {
   const cards = [
     {
-      title: "Full-Stack Web",
+      title: "Frontend Engineering",
       count: "01",
       icon: Code2,
-      description: "Modern web applications built with React, Next.js, and Node.js. Focused on performance, responsive design, and solid test coverage.",
-      skills: ["React.js", "Next.js", "Node.js", "Tailwind CSS"],
+      description: "Responsive, pixel-perfect user interfaces built with React, Next.js, and Tailwind CSS. Focused on clean UX, performance, and accessibility.",
+      skills: ["React.js", "Next.js", "Tailwind CSS", "JavaScript"],
       accent: "from-blue-500/20 to-indigo-500/5",
       borderHover: "hover:border-blue-500/50"
     },

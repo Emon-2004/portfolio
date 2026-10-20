@@ -83,7 +83,7 @@ export default function Hero() {
               <div className="absolute bottom-3 left-3 right-3 bg-[#131627]/90 backdrop-blur-md rounded-xl p-3 border border-white/10 flex items-center justify-between">
                 <div>
                   <p className="text-xs font-semibold text-white">East West University</p>
-                  <p className="text-[11px] text-gray-400">B.Sc. CSE • CGPA 3.48</p>
+                  <p className="text-[11px] text-gray-400">B.Sc. in CSE (Undergraduate)</p>
                 </div>
                 <span className="w-2 h-2 rounded-full bg-emerald-400" />
               </div>
@@ -96,7 +96,7 @@ export default function Hero() {
                 <span className="text-xs font-semibold text-white">Core Focus</span>
               </div>
               <p className="text-xs text-gray-300 leading-relaxed">
-                PostgreSQL RLS Architecture, Next.js / React full-stack portals, and applied Machine Learning classifiers.
+                Modern React &amp; Next.js interfaces, Tailwind CSS styling, responsive UI design, and automated QA testing.
               </p>
             </div>
           </div>

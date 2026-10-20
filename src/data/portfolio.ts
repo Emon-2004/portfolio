@@ -49,18 +49,18 @@ export const portfolioData: {
   personal: {
     name: "Md Saiful Islam Emon",
     headline: "Md Saiful Islam Emon.",
-    role: "Full-Stack, AI & Database Builder",
-    shortBio: "Computer Science & Engineering student at East West University with a sharp focus on modern full-stack web architectures, granular PostgreSQL database design, Row Level Security, and machine learning systems.",
-    extendedBio: "I am a passionate software developer who loves bridging the gap between rigorous database models and sleek user interfaces. I thrive on solving complex engineering puzzles—from designing consolidated PostgreSQL schemas with ironclad Row-Level Security (RLS) policies to orchestrating resilient full-stack applications with Playwright end-to-end testing.",
+    role: "Frontend & UI Developer",
+    shortBio: "Computer Science & Engineering student at East West University with a sharp focus on modern frontend web architectures, responsive interfaces, test automation with Playwright & Jest, and Python.",
+    extendedBio: "I am a passionate frontend developer who loves building responsive, high-performance web applications with clean design aesthetics. I thrive on translating UI designs into pixel-perfect code, crafting intuitive user interactions, and ensuring reliability through automated testing.",
     location: "Dhaka / Narayanganj, Bangladesh",
     email: "Md_Saiful_Islam_Emon@proton.me",
     phone: "+880 1614-795566",
-    statusText: "Open to Internships & Software Roles",
+    statusText: "Open to Frontend Roles & Internships",
     github: "https://github.com/Emon-2004",
     linkedin: "https://linkedin.com/in/md-saiful-islam-emon-6765a8345",
     resumeUrl: "/resume.pdf",
-    interests: ["High-performance Web Apps", "Database Engineering & RLS", "Applied Machine Learning", "Distributed Architecture"],
-    hobbies: ["Chess & Problem Solving", "Tech Blogs", "Exploring Open-Source", "Competitive Coding"],
+    interests: ["Modern Frontend Architecture", "Interactive Web Animations", "Component Systems & UI/UX", "Automated QA Testing"],
+    hobbies: ["Competitive Problem Solving", "Tech Blogs", "Exploring Open-Source", "Competitive Coding"],
   },
   education: {
     degree: "B.Sc. in Computer Science and Engineering",
@@ -77,7 +77,7 @@ export const portfolioData: {
   },
   skills: {
     frontend: ["React.js", "Next.js", "Tailwind CSS", "JavaScript (ES6+)", "HTML5 / Canvas", "CSS3"],
-    backend: ["Node.js", "Express.js", "REST APIs", "Playwright Testing", "Python"],
+    backend: ["Python", "Playwright Testing", "Jest"],
     databases: ["PostgreSQL", "Supabase", "Row Level Security (RLS)", "MongoDB", "SQL Schema Design"],
     tools: ["Git & GitHub", "Figma", "Linux CLI", "VS Code", "Vercel", "Postman"]
   },
