@@ -1,7 +1,18 @@
+# Personal assets to keep strictly private
+Emon portfolio.jpg
+*.jpg
+*.jpeg
+*.png
+*.pdf
+*.docx
+public/emon.jpg
+public/resume.pdf
+public/*.pdf
+public/*.jpg
+
 # Reference files to keep strictly private
 reference-portfolio/
 portfolio_task_requirements.md
-*.docx
 .agent/
 .agents/
 
