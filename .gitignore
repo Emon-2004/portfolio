@@ -1,13 +1,9 @@
-# Personal assets to keep strictly private
-*.jpg
-*.jpeg
-*.png
+# Keep resume & raw documents private
 *.pdf
 *.docx
-
-public/resume.pd
+public/resume.pdf
 public/*.pdf
-public/*.jpg
+Emon portfolio.jpg
 
 # Reference files to keep strictly private
 reference-portfolio/
