@@ -4,8 +4,8 @@
 *.png
 *.pdf
 *.docx
-public/emon.jpg
-public/resume.pdf
+
+public/resume.pd
 public/*.pdf
 public/*.jpg
 
