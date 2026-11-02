@@ -1,8 +1,5 @@
 # Keep resume & raw documents private
-*.pdf
 *.docx
-public/resume.pdf
-public/*.pdf
 Emon portfolio.jpg
 
 # Reference files to keep strictly private
